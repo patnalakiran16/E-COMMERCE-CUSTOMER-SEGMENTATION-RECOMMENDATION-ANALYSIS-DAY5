@@ -1,0 +1,67 @@
+Dataset Loaded Successfully!
+  InvoiceNo StockCode  ...  CustomerID         Country
+0    536365    85123A  ...     17850.0  United Kingdom
+1    536365     71053  ...     17850.0  United Kingdom
+2    536365    84406B  ...     17850.0  United Kingdom
+3    536365    84029G  ...     17850.0  United Kingdom
+4    536365    84029E  ...     17850.0  United Kingdom
+
+[5 rows x 8 columns]
+
+Dataset Shape: (541909, 8)
+
+Dataset Information:
+<class 'pandas.DataFrame'>
+RangeIndex: 541909 entries, 0 to 541908
+Data columns (total 8 columns):
+ #   Column       Non-Null Count   Dtype         
+---  ------       --------------   -----         
+ 0   InvoiceNo    541909 non-null  object        
+ 1   StockCode    541909 non-null  object        
+ 2   Description  540455 non-null  object        
+ 3   Quantity     541909 non-null  int64         
+ 4   InvoiceDate  541909 non-null  datetime64[us]
+ 5   UnitPrice    541909 non-null  float64       
+ 6   CustomerID   406829 non-null  float64       
+ 7   Country      541909 non-null  str           
+dtypes: datetime64[us](1), float64(2), int64(1), object(3), str(1)
+memory usage: 33.1+ MB
+
+Missing Values:
+InvoiceNo           0
+StockCode           0
+Description      1454
+Quantity            0
+InvoiceDate         0
+UnitPrice           0
+CustomerID     135080
+Country             0
+dtype: int64
+
+Cleaned Dataset Shape: (397884, 9)
+
+Total Customers: 4338
+Total Products: 3665
+Total Revenue: 8911407.9
+
+RFM Analysis:
+            Recency  Frequency  Monetary
+CustomerID                              
+12346           326          1  77183.60
+12347             2          7   4310.00
+12348            75          4   1797.24
+12349            19          1   1757.55
+12350           310          1    334.40
+
+RFM Statistics:
+           Recency    Frequency       Monetary
+count  4338.000000  4338.000000    4338.000000
+mean     92.536422     4.272015    2054.266460
+std     100.014169     7.697998    8989.230441
+min       1.000000     1.000000       3.750000
+25%      18.000000     1.000000     307.415000
+50%      51.000000     2.000000     674.485000
+75%     142.000000     5.000000    1661.740000
+max     374.000000   209.000000  280206.020000
+
+Feature Scaling Completed!
